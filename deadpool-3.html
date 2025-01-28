@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Diseño Profesional y Llamativo</title>
+<style>
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #181818;
+  color: #fff;
+  margin: 0;
+  overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px; /* Ajusta el padding según sea necesario */
+}
+
+.video-player {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 10px; /* Espacio reducido entre el video y el título */
+}
+
+.video-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.movie-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 5px; /* Espacio reducido entre el título y la información */
+}
+
+.movie-info {
+  font-size: 0.9em; /* Texto ligeramente más pequeño */
+  line-height: 1.2; /* Reduce el espacio entre líneas */
+  margin-bottom: 10px;
+  color: #aaa;
+}
+
+.movie-info p {
+  margin-bottom: 2px;
+}
+
+.movie-info h3 {
+  color: #fff;
+  margin-top: 15px; /* Espacio entre la información y la sinopsis */
+  text-align: left; /* Alinea el título a la izquierda */
+}
+
+.movie-info .details {
+  margin-top: 10px;
+}
+
+.movie-info .details p {
+  margin-bottom: 5px;
+}
+
+.movie-suggestions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 5px; /* Espacio reducido entre las sugerencias */
+}
+
+.movie-suggestion {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.movie-suggestion img {
+  width: 100%;
+  height: auto;
+}
+
+.rating {
+  font-weight: bold;
+  color: orange;
+  font-size: 1.2em; /* Calificación más grande */
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="video-player">
+    <iframe src="https://www.youtube.com/embed/aHR0cHM6Ly9yeWRlcmmpldC5jb20vZW1iZWQvc2tmYWY4MWx6MnE1" title="Video" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="movie-title">DEADPOOL 3 <span class="rating">8.2</span></div>
+  <div class="movie-info">
+    <p>United States | 1999 | Drama/Mystery/Thriller</p>
+    <p>El doctor Malcolm Crowe es un conocido psicólogo infantil de Filadelfia que vive obsesionado por el doloroso recuerdo de un joven paciente desequilibrado al que fue incapaz de ayudar. Cuando conoce a Col...</p>
+    <p>Director: M. Night Shyamalan</p>
+    <p>Actores: Bruce Willis/Haley Joel Osment/Toni Collette</p>
+
+    <h3>Sinopsis</h3>
+    <p>Una breve descripción de la trama del anime, incluyendo los personajes principales y la situación inicial.</p>
+
+    <h3>Detalles</h3>
+    <div class="details">
+      <p><strong>Género:</strong>  Acción, Aventura, Comedia</p>
+      <p><strong>Estreno:</strong> 2023-12-01</p>
+    </div>
+  </div>
+
+  <h2>También podría gustarte</h2>
+  <div class="movie-suggestions">
+    <!-- ... (Sugerencias de películas) ... -->
+  </div>
+</div>
+
+</body>
+</html>
